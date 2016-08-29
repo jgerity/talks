@@ -21,7 +21,7 @@
 
 * [Anaconda](https://www.continuum.io/downloads) - a utility to manage different Python environments, and packages installed therein
 * [Scipy lectures](https://scipy-lectures.github.io/)
-* TODO: MOOCs
+* [Google's introductory notes on Python (including video lectures)](https://developers.google.com/edu/python/introduction?pageId=105694254432924708823)
 
 #### Textbooks
 * [Learn Python the Hard Way](https://learnpythonthehardway.org/book/)
