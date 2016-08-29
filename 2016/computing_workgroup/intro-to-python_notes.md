@@ -19,6 +19,7 @@
 
 ### Useful resources
 
+* [Anaconda](https://www.continuum.io/downloads) - a utility to manage different Python environments, and packages installed therein
 * [Scipy lectures](https://scipy-lectures.github.io/)
 * TODO: MOOCs
 
