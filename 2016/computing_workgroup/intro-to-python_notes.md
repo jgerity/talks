@@ -26,3 +26,12 @@
 #### Textbooks
 * [Learn Python the Hard Way](https://learnpythonthehardway.org/book/)
 * [Think Python](http://greenteapress.com/wp/think-python/)
+
+### Misc.
+* The `code` module can be very helpful for debugging:
+```python
+# Drop out to an interactive console, bringing the local environment with us.  Useful for inspecting variables, etc.
+import code
+code.interact(local=locals())
+# Use Ctrl-D to resume normal execution where you left off when you're done!
+```
