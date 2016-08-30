@@ -28,6 +28,8 @@
 * [Think Python](http://greenteapress.com/wp/think-python/)
 
 ### Misc.
+* Dictionaries are actually implemented a fairly sophisticated structure called a [hash table](https://en.wikipedia.org/wiki/Hash_table).  To better understand this in the context of Python, I recommend [The Mighty Dictionary](https://www.youtube.com/watch?v=C4Kc8xzcA68), an excellent talk by Brandon Craig Rhodes presented at PyCon 2010.
+
 * The `code` module can be very helpful for debugging:
 ```python
 # Drop out to an interactive console, bringing the local environment with us.  Useful for inspecting variables, etc.
