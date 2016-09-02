@@ -1,9 +1,14 @@
 import time
 
-"""
-These scripts are designed to be run semi-interactively (try invoking with `python -i script.py`)
-Any line marked ### is a good example to try!
-"""
+def multiply(x,y):
+    # the 'return' keyword allows us to use the result of this calculation
+    return x * y
+
+def factorial(n):
+    if (n == 0):
+        return 1
+    elif n > 0:
+        return n * factorial(n-1)
 
 # notice that some of this function's arguments have default values
 def count(stop, start=0, how_long=False):
@@ -11,7 +16,7 @@ def count(stop, start=0, how_long=False):
    Print all integers between two values, inclusive.
    start=0 - beginning value
    stop=1e6 - ending value
-   how_long - if True, prints how long the process took
+   how_long - if True, prints how long the process took using the 'time' module
    """
    t = time.clock()
    i = start
@@ -22,11 +27,6 @@ def count(stop, start=0, how_long=False):
    if how_long:
        print("Process took %s seconds" % str(time.clock() - t))
 
-# notice that we can refer to arguments by their name, and in any order!
-### count(10)
-### count(10, -2)
-### count(start=-3, stop=3)
-### count(20, how_long=True)
 
 
 def yell(*args, **kwargs):
@@ -40,8 +40,37 @@ def yell(*args, **kwargs):
     for key in kwargs.keys():
         print("I was given the keyword %s with value %s" % (key, kwargs[key]))
 
-### yell("hi there!")
-### yell("the old grey mule she", "ain't what she used to be", "ain't what she used to be", "ain't what she used to be")
+
+print(
+"""
+# Try these examples:
+multiply(5,5)
+x = multiply(10,5)
+x * 2
+factorial(3)
+"""
+)
+
+# notice that we can refer to arguments by their name, and in any order!
+print(
+"""
+# Try these examples:
+count(10)
+count(10, -2)
+count(start=-3, stop=3)
+count(20, how_long=True)
+help(count)
+print(count.__doc__)
+"""
+)
+
+print(
+"""
+# Try these examples:
+yell("hi there!")
+yell("the old grey mule she", "ain't what she used to be", "ain't what she used to be", "ain't what she used to be")
 
 # *args will be an empty tuple in this case, but that won't break our function!
 ### yell(firstarg=[1,2,3], secondarg="spaghetti")
+"""
+)
