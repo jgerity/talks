@@ -18,7 +18,7 @@
  * [Coupled spring-mass system](http://scipy-cookbook.readthedocs.io/items/CoupledSpringMassSystem.html)
 
 ### Useful resources
-
+* [Python/numpy/scipy/matplotlib tutorial from Stanford's CS231n](http://cs231n.github.io/python-numpy-tutorial/) (also available as [a notebook](https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb))
 * [Anaconda](https://www.continuum.io/downloads) - a utility to manage different Python environments, and packages installed therein
 * [Scipy lectures](https://scipy-lectures.github.io/)
 * [Google's introductory notes on Python (including video lectures)](https://developers.google.com/edu/python/introduction?pageId=105694254432924708823)
