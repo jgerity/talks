@@ -1,5 +1,18 @@
 # Notes on Python modules for scientific computing
 
-* [SciPy.org](http://www.scipy.org) is the main jumping-off point for information on any modules in the SciPy stack (numpy, scipy, matplotlib, etc.)
+## Scipy
 
-* [Numba talk from SciPy 2016](https://www.youtube.com/watch?v=SzBi3xdEF2Y) demonstrating many features as well as pitfalls.  Includes some simple fluid dynamics as a toy problem.
+* [SciPy.org](http://www.scipy.org) is the main jumping-off point for information on any modules in the SciPy stack (numpy, scipy, matplotlib, etc.)
+* The [SciPy cookbook](http://scipy-cookbook.readthedocs.io/) has great examples of digestible problems
+* [Fitting data with scipy.optimize](http://scipy-cookbook.readthedocs.io/items/FittingData.html)
+
+## Numpy
+
+* [Official numpy quickstart tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html), with lots of references to more detailed documentation
+* [Notebook-based introduction to Python/numpy](https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb) from a Stanford CS course
+* [Numpy for MATLAB users](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users.html) - a side-by-side comparison of numpy and MATLAB
+* [Broadcasting in numpy](http://scipy.github.io/old-wiki/pages/EricsBroadcastingDoc) - breakdown of what actually happens with broadcasting
+
+## Other misc information
+
+* [Numba talk from SciPy 2016](https://www.youtube.com/watch?v=SzBi3xdEF2Y) demonstrating many features as well as pitfalls.  Includes some simple fluid dynamics as a toy problem
