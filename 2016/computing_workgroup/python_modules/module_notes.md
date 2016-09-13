@@ -13,6 +13,12 @@
 * [Numpy for MATLAB users](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users.html) - a side-by-side comparison of numpy and MATLAB
 * [Broadcasting in numpy](http://scipy.github.io/old-wiki/pages/EricsBroadcastingDoc) - breakdown of what actually happens with broadcasting
 
+## Astropy
+  * [A 1-D model fit in Astropy](http://docs.astropy.org/en/stable/modeling/#simple-1-d-model-fitting)
+  * [Reading and plotting an image from a FITS file](http://docs.astropy.org/en/stable/generated/examples/io/plot_fits-image.html#sphx-glr-generated-examples-io-plot-fits-image-py)
+  * [Real-world analysis from *"The kinematics of the Local Group in a cosmological context"*](http://nbviewer.jupyter.org/github/forero/LG_Kinematics/blob/master/code/main_analysis.ipynb)
+  * [Overview of Astropy and related libraries](https://github.com/adonath/gamma_astropy_talk/blob/master/gamma_astropy_talk.ipynb)
+
 ## Other misc information
 
 * [Numba talk from SciPy 2016](https://www.youtube.com/watch?v=SzBi3xdEF2Y) demonstrating many features as well as pitfalls.  Includes some simple fluid dynamics as a toy problem
