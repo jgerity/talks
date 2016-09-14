@@ -20,6 +20,7 @@
 #### Textbooks
 * [Learn Python the Hard Way](https://learnpythonthehardway.org/book/)
 * [Think Python](http://greenteapress.com/wp/think-python/)
+* [Dive Into Python 3](http://www.diveintopython3.net/)
 
 ### Misc.
 * Dictionaries are actually implemented a fairly sophisticated structure called a [hash table](https://en.wikipedia.org/wiki/Hash_table).  To better understand this in the context of Python, I recommend [The Mighty Dictionary](https://www.youtube.com/watch?v=C4Kc8xzcA68), an excellent talk by Brandon Craig Rhodes presented at PyCon 2010.
