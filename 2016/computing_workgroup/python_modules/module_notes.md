@@ -19,11 +19,11 @@
 * [Pandas from the ground up](https://www.youtube.com/watch?v=5JnMutdy6Fw) - a comprehensive introductory PyCon 2015 talk by Brandon Rhodes.  Supplemented by [exercise notebooks](https://github.com/brandon-rhodes/pycon-pandas-tutorial)
 
 ## Astropy
-  * [A 1-D model fit in Astropy](http://docs.astropy.org/en/stable/modeling/#simple-1-d-model-fitting)
-  * [Reading and plotting an image from a FITS file](http://docs.astropy.org/en/stable/generated/examples/io/plot_fits-image.html#sphx-glr-generated-examples-io-plot-fits-image-py)
-  * [Real-world analysis from *"The kinematics of the Local Group in a cosmological context"*](http://nbviewer.jupyter.org/github/forero/LG_Kinematics/blob/master/code/main_analysis.ipynb)
-  * [Overview of Astropy and related libraries](https://github.com/adonath/gamma_astropy_talk/blob/master/gamma_astropy_talk.ipynb)
+* [A 1-D model fit in Astropy](http://docs.astropy.org/en/stable/modeling/#simple-1-d-model-fitting)
+* [Reading and plotting an image from a FITS file](http://docs.astropy.org/en/stable/generated/examples/io/plot_fits-image.html#sphx-glr-generated-examples-io-plot-fits-image-py)
+* [Real-world analysis from *"The kinematics of the Local Group in a cosmological context"*](http://nbviewer.jupyter.org/github/forero/LG_Kinematics/blob/master/code/main_analysis.ipynb)
+* [Overview of Astropy and related libraries](https://github.com/adonath/gamma_astropy_talk/blob/master/gamma_astropy_talk.ipynb)
 
 ## Other misc information
-
+* Python has a [built-in multiprocessing module](https://docs.python.org/2/library/multiprocessing.html) for managing threading and parallelism, if you do not need the massively-distributed features of, e.g. [mpi4py](http://mpi4py.readthedocs.io/en/stable/)
 * [Numba talk from SciPy 2016](https://www.youtube.com/watch?v=SzBi3xdEF2Y) demonstrating many features as well as pitfalls.  Includes some simple fluid dynamics as a toy problem
