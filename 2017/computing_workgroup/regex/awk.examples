@@ -1,0 +1,90 @@
+AWK(written by Alfred Aho, Peter Weinberger, and Brian Kernighan names spell AWK)
+
+Workflow of AWK:
+1:  Execute Begin Block Commands
+2:  Read input stream
+    Execute awk commands on imput stream
+    Repeat if not end of file
+3:  Execute End Block Commands
+
+
+Syntax of AWK:
+BEGIN                 {awk-commands}
+/regular expression/  {awk-commands}
+END                   {awk-commands}
+
+
+How to call AWK
+Can either write code on command line or in file.
+
+  Command line example:
+  > awk 'BEGIN {print "Hello World"} {print "!"}' foo.txt
+  The output of this will be:
+  > Hello World
+  > !
+  > !
+  > !
+  ... until end of file is reached
+
+  To execute the same command from a script:
+  foo.awk:
+    BEGIN {print "Hello World"}
+          {print !}
+  And we would call it as:
+  awk -f foo.awk foo.txt
+
+To read a file and print out the first column of it:
+awk '{print $1}' foo.txt
+or
+cat foo.txt | awk '{print $1}'
+
+There are a few built in variables to awk:
+
+== awk built in variables
+.. ARGC - number of command line arguments.
+.. ARGV - array of command line arguments, 0..ARGC-1.
+.. CONVFMT - format for conversion of numbers to string, default "%.6g".
+.. ENVIRON - array indexed by environment variables.  An  environment string, var=value is stored as ENVIRON[var] = value.
+.. FILENAME - name of the current input file.
+.. FNR - current record number in FILENAME.
+.. FS - splits records into fields as a regular expression.
+.. NF - number of fields in the current record.
+.. NR - current record number in the total input stream.
+.. OFMT - format for printing numbers; initially = "%.6g".
+.. OFS - inserted between fields on output, initially = " ".
+.. ORS - terminates each record on output, initially = "\n".
+.. RLENGTH - length  set  by  the last call to the built-in function, match().
+.. RS - input record separator, initially = "\n".
+.. RSTART - index set by the last call to match().
+.. SUBSEP - used to build multiple  array  subscripts,  initially  = "\034".
+
+You can also define your own variables:
+
+Example:
+df -m lists out your hard drives and how much memory they have
+
+The awk portion counts how much memory is used, and how much is avalible and then prints out at the end
+df -m | awk '{p+=$3};{t+=$4}; END{print "you are using " p" MB which is" p/t*100 "% of your memory"}
+
+
+Example:
+This command takes the 2mass catalog  and converts the voatble input into a csv table output that is saved.
+
+2 ways:
+In a file(2mass.awk):
+BEGIN {FS="</TD><TD>", OFS=","}
+/<TR><TD>/{$1=substr($1,9,10); $17=substr($17,1,1); print }'
+
+called as awk -f 2mass.awk 2mass.cat > 2mass.csv
+
+On command line:
+awk -F "</TD><TD>" 'BEGIN {OFS=","} /<TR><TD>/{$1=substr($1,9,10); $17=substr($17,1,1); print }' 2mass.cat 2mass.csv
+
+If I only wanted the first 5 columns of the table I could use cut
+awk -f 2mass.awk 2mass.cat | cut -d "," -f1-f5 > 2mass.csv
+
+
+A few good resources:
+-Good overview:http://bumble.sourceforge.net/books/awk/awk-book.txt
+-Really in Depth: https://www.gnu.org/software/gawk/manual/gawk.html
+-If you use IRAF(astronomers) also a good overview:http://sparky.rice.edu/~hartigan/awk.html
