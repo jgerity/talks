@@ -17,9 +17,9 @@
 * [Scipy lectures](https://scipy-lectures.github.io/)
 * [Google's introductory notes on Python (including video lectures)](https://developers.google.com/edu/python/introduction?pageId=105694254432924708823)
 
-#### Textbooks
-* [Learn Python the Hard Way](https://learnpythonthehardway.org/book/)
+#### Textbooks (FREE and copyleft-licensed!)
 * [Think Python](http://greenteapress.com/wp/think-python/)
+* [Automate the Boring Stuff With Python](https://automatetheboringstuff.com/)
 * [Dive Into Python 3](http://www.diveintopython3.net/)
 
 ### Misc.
